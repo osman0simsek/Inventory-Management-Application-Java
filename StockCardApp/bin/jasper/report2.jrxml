@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report2" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b45444c6-4d8b-4049-8a16-d5b1a3dce4a0">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="STOK KODU" class="java.lang.String"/>
+	<field name="STOK ADI" class="java.lang.String"/>
+	<field name="STOK TİPi" class="java.lang.String"/>
+	<field name="BİRİMİ" class="java.lang.String"/>
+	<field name="BARKODU" class="java.lang.String"/>
+	<field name="KDV" class="java.lang.String"/>
+	<field name="AÇIKLAMA" class="java.lang.String"/>
+	<field name="OLUŞTURMA TARİHİ" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="225" y="0" width="111" height="26" uuid="12b941ec-f707-44c9-abc1-aff388c99ffc"/>
+				<textElement>
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Stok Listesi]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="11" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="46" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="69" height="20" uuid="bbd21c36-7e89-49e5-a584-681890e21317"/>
+				<textElement>
+					<font size="10" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[STOK KODU]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="69" y="0" width="69" height="20" uuid="14441f60-4722-44a8-a54d-2dd423387052"/>
+				<textElement>
+					<font size="10" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[STOK ADI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="138" y="0" width="69" height="20" uuid="6360d5cc-90ed-4f2c-ae50-debda30a3c58"/>
+				<textElement>
+					<font size="10" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[STOK TİPi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="207" y="0" width="69" height="20" uuid="eff0c323-91a6-45ea-800d-b9eb82dc31f0"/>
+				<textElement>
+					<font size="10" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[BİRİMİ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="276" y="0" width="69" height="20" uuid="e37017e5-56b6-404c-9890-867458216cc1"/>
+				<textElement>
+					<font size="10" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[BARKODU]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="345" y="0" width="69" height="20" uuid="4d13090c-b778-45f4-8f02-bbd36df951dc"/>
+				<textElement>
+					<font size="10" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[KDV]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="414" y="0" width="69" height="20" uuid="9d50f21d-f105-4ea2-8f79-46364f7212e4"/>
+				<textElement>
+					<font size="10" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[AÇIKLAMA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="483" y="0" width="69" height="20" uuid="b393903c-7ad5-4fdb-9225-740d919c6902"/>
+				<textElement>
+					<font size="8" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[OLUŞTURMA TARİHİ]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="388" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="69" height="20" uuid="99005f66-74bf-4bee-947d-37d30136661a"/>
+				<textFieldExpression><![CDATA[$F{STOK KODU}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="69" y="0" width="69" height="20" uuid="e9c6e02f-42c1-49d4-aa64-47ca3f11be16"/>
+				<textFieldExpression><![CDATA[$F{STOK ADI}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="138" y="0" width="69" height="20" uuid="df8957a2-1eac-49b0-b174-83d772f3d591"/>
+				<textFieldExpression><![CDATA[$F{STOK TİPi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="207" y="0" width="69" height="20" uuid="ff29a158-cf2d-419b-9eef-00fa454ad3af"/>
+				<textFieldExpression><![CDATA[$F{BİRİMİ}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="276" y="0" width="69" height="20" uuid="132288a2-2a03-4032-9d91-77751884e5e0"/>
+				<textFieldExpression><![CDATA[$F{BARKODU}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="345" y="0" width="69" height="20" uuid="b53e16eb-efff-41e3-98c0-9d40829844f0"/>
+				<textFieldExpression><![CDATA[$F{KDV}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="414" y="0" width="69" height="20" uuid="8110ebb9-2799-4582-a4a0-bd05cec36090"/>
+				<textFieldExpression><![CDATA[$F{AÇIKLAMA}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="483" y="0" width="69" height="20" uuid="a6d796e3-55fc-487b-aa5a-a3a76ae983a2"/>
+				<textFieldExpression><![CDATA[$F{OLUŞTURMA TARİHİ}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="51" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="47" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="108" splitType="Stretch"/>
+	</summary>
+</jasperReport>
